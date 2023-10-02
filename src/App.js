@@ -22,7 +22,7 @@ function MiscellaniousButton({btnValue,onMiscClick}){
 
 function DisplayerScreen({displayValue}){
   return (
-  <div className='bg-blue-200 font-medium text-6xl flex justify-end py-12 px-3 rounded-md'>{displayValue}</div>
+  <div className='bg-blue-200 font-medium text-6xl flex justify-end py-12 px-3 rounded-md max-w-[472px]'><p className='overflow-x-scroll cursor-all-scroll'>{displayValue}</p></div>
   )
 }
 
@@ -131,7 +131,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col h-screen items-center justify-center bg-indigo-950">
+    <div className="flex flex-col min-h-screen items-center justify-center bg-indigo-950">
       <h1 className='text-blue-400 mb-24 text-7xl font-bold'>Calculator</h1>
       <div className='border-4 border-indigo-800 px-8 py-16 rounded-xl shadow-indigo-700 shadow-lg'>
           <DisplayerScreen displayValue={displayValue}/>
